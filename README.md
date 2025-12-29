@@ -34,6 +34,12 @@ Built with [Rust](https://www.rust-lang.org/), [Tokio](https://tokio.rs/), and [
     git clone https://github.com/kurisu-shantsu/simple-task-manager-system
     ```
 
+- **Change Directory**:
+
+    ```terminaloutput
+    cd simple-task-manager-system
+    ```
+
 - **Run the Application**:
 
     ```terminaloutput
@@ -44,7 +50,9 @@ Built with [Rust](https://www.rust-lang.org/), [Tokio](https://tokio.rs/), and [
 
 The project is split into three core modules:
 
-* `main.rs`: Handles the asynchronous input loop and command routing.
+* `main.rs`: Starts the application.
+
+* `input_handler.rs`: Handles the asynchronous loops and user inputs.
 
 * `to_do_list.rs`: Manages the `Vec` of items and file I/O logic.
 
