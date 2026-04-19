@@ -149,8 +149,8 @@ impl ToDoList {
                             self.items.push(
                                 // Structure the item and parse the parts properly
                                 ToDoItem::load(
-                                    parts[0].to_string(),
-                                    parts[1].parse::<bool>().unwrap()
+                                    parts[0].trim().to_string(),
+                                    parts[1].trim().parse::<bool>().unwrap()
                                 )
                             )
                         }
